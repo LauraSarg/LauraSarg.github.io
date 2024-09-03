@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"> <!-- Ensures website is viewable on mobile -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Style sheet for Nav 'hamburger' Icon -->
+        <link rel="stylesheet" href="main.css"> <!-- main style sheet -->
+        <title> Qualifications - Teaching Portfolio </title>
+    </head>
+
+    <body class="page-qualifications">
+
+        <!-- { Header } -->
+        <header> 
+
+            <!-- title -->
+            <div id="title">
+                <img src="Images/sparkle.png" alt="Decorative sparkles">
+                <h1> Teaching Portfolio </h1>
+                <img src="Images/sparkle.png" alt="Decorative sparkle">
+            </div>
+                    
+            <!-- Nav -->
+            <nav class="nav" id="mynav">
+                <a href="index.html" class="home-nav button">Home</a>
+                <a href="About-me.html" class="about-nav button">About me</a>
+                <a href="Qualifications.html" class="current qualifications-nav button">Qualifications</a>
+                <a href="Teaching-philosophy.html" class="teaching-nav button">Teaching Philosophy</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>  <!-- Mobile only Navigation Icon -->
+
+                <!-- JavaScript for mobile nav bar -->
+                <script>
+                    function myFunction() {
+
+                    // Get the navigation element by its id
+                      var x = document.getElementById("mynav");
+
+                    // Reveal mobile nav drop down when icon is clicked
+                      if (x.className === "nav") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "nav";
+                      }
+                    }
+                </script>
+            </nav>
+
+        </header>  
+        
+        <!-- Content -->
+        <div id="content-wrapper">
+            
+            <!-- Content 1 - Resume -->
+            <div id="content-1">
+
+                <input type="checkbox" id="resume-collapsible-toggle" class="resume-collapsible-checkbox">
+                <label for="resume-collapsible-toggle" class="resume-collapsible-label label">
+                    Resume <br>
+                    <span class="toggle-text"> (Click to toggle)</span>
+                </label>
+
+                <div class="content-1a">
+                    <img src="images/Resume.png" alt="Resume Image">
+                    <a class="download" href=Documents/resume.pdf download>Download PDF</a>
+                </div>
+
+            </div>
+
+            <!-- Content 2 - Degree -->
+            <div id="content-2">
+                
+                <input type="checkbox" id="degree-collapsible-toggle" class="degree-collapsible-checkbox">
+                <label for="degree-collapsible-toggle" class="degree-collapsible-label label">
+                    Bachelor of teaching (secondary), Bachelor of arts (Design innovation and technology) <br>
+                    <span class="toggle-text"> (Click to toggle)</span>
+                </label>
+
+                <div class="content-2a">
+                    <img src="images/Degree.png" alt="Resume Image">
+                    <a class="download" href=Documents/Degree.pdf download>Download PDF</a>
+                </div>
+
+            </div>
+            <!-- Content 3 - Certification -->
+            <div id="content-3">
+
+                <input type="checkbox" id="cert-collapsible-toggle" class="cert-collapsible-checkbox">
+                <label for="cert-collapsible-toggle" class="cert-collapsible-label label">
+                    Cert II Kitchen operations <br>
+                    <span class="toggle-text"> (Click to toggle)</span>
+                </label>
+
+                <div class="content-3a">
+                    <img src="images/Cert.png" alt="Resume Image">
+                    <a class="download" href=Documents/Cert.pdf download>Download PDF</a>
+                </div>
+
+            </div>
+            
+            <!-- Content 4 - Letter -->
+            <div id="content-4">
+
+                <input type="checkbox" id="letter-collapsible-toggle" class="letter-collapsible-checkbox">
+                <label for="letter-collapsible-toggle" class="letter-collapsible-label label">
+                   Faculty Commendation Letter <br>
+                    <span class="toggle-text"> (Click to toggle)</span>
+                </label>
+
+                <div class="content-4a">
+                    <img src="images/Letter.png" alt="Resume Image">
+                    <a class="download" href=Documents/Letter.pdf download>Download PDF</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!-- { Footer } -->
+        <Footer id="footer-wrapper"> 
+
+            <!-- logo -->
+            <section id="footer-logo">
+
+                <img src="images/Logo.png" alt="logo">
+                <h6>Comp208 Task 1</h6>
+
+            </section>
+
+            <!-- Footer nav  -->
+            <section id="footer-nav">
+
+                <h5> Navigation </h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About-me.html">About me</a></li>
+                    <li><a href="Qualifications.html">Qualifications</a></li>
+                    <li><a href="Teaching-philosophy.html">Teaching philosophy</a></li>  
+                </ul>   
+
+            </section>
+
+            <!-- Quick nav  -->
+            <section id="footer-quick">
+
+                <h5> Quick links </h5>
+                <ul>
+                    <li><a href="Qualifications.html">Resume</a></li>
+                    <li><a href="Qualifications.html">Degree Transcript</a></li>  
+                    <li><a href="Qualifications.html">Cert II Kitchen operations </a></li>
+                    <li><a href="Qualifications.html">Faculty Commendation Letter </a></li>
+                </ul>  
+
+            </section>
+
+            <!-- Contact -->
+            <section id="footer-contact">
+        
+                <h5> Contact </h5>
+                <ul>
+                    <li id="contact-phone"> <img src="Images/phone.png" alt="phone icon"> 0400000000</li>
+                    <li id="contact-Linkedin"> <img src="Images/linkedin.png" alt="linkedin icon"> Laura-sargeant</li>
+                    <li id="contact-gmail"> <img src="Images/gmail.png" alt="Gmail icon"> emailaddress@gmail.com</li>
+                </ul>  
+
+            </section>
+
+        </Footer>
+     
+    </body>
+
+</html>

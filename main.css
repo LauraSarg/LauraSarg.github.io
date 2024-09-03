@@ -1,0 +1,632 @@
+/*
+    HTML and CSS done by Laura Sargeant, no template was used
+*/
+
+/* -------- General styles / setup -------- */
+    body {
+        background-color: #EEE7D9; /* set default background colour */
+        font-family: Georgia, serif; /* Set default font */
+        color: #272020;            /* Set default color */
+    }
+
+    /* Set default text styles */
+    h1 {
+        font-size: 40pt;
+    }
+
+    h2 {
+        font-size: 28pt; 
+        margin: 0px;
+    }
+
+    h3 {
+        font-size: 24pt; 
+        margin: 0px;
+    }
+
+    h4 {
+        font-size: 18pt; 
+        margin: 0px;
+    }
+
+    h5 {
+        font-size: 14pt;
+        margin: 0px;
+    }
+
+    h6 {
+        font-size: 13pt; 
+        color:#8f8276;
+        margin: 0px;
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 15pt; 
+        text-align: justify;
+    }
+
+/* -------- Title -------- */ 
+    /* align title */
+    #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust sparkle images size */
+    #title img {
+        width: 80px;
+        margin: 0 10px;
+    }
+
+    /* Adjust title position */
+    #title h1 {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+/* -------- Navigation -------- */ 
+
+    /* syle the nav bar */
+    .nav { 
+        border-top: 2px solid #272020; 
+        border-bottom: 2px solid #272020;
+        overflow: hidden;
+        margin: 10px auto 20px auto; 
+    }
+
+    /* Style the links inside the navigation bar */
+    .nav a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: #342929;
+        font-size: 18px;
+        font-weight:bold;
+    }
+
+    /* Outline the selected page */
+    .nav a.current {
+        border: 2px solid #272020;
+        border-radius: 16px;
+    }
+
+    /* Adjust button positioning */
+    .nav a.button {
+        margin: 10px 40px;
+    }
+
+    /* change style when hovered */
+    .nav a.button:hover {
+        color: #EEE7D9;     
+        border-radius: 16px;
+    }
+
+    /* Set indiviual hover colours for each button */
+    .nav a.home-nav:hover {
+        background-color: #CF7C72;
+    }
+
+    .nav a.about-nav:hover {
+        background-color: #618eac;
+    }
+
+    .nav a.qualifications-nav:hover {
+        background-color: #ce9f42;
+    }
+
+    .nav a.teaching-nav:hover {
+        background-color: #679f5f;
+    }
+
+    /* Hide mobile nav icon on desktop */
+    .nav .icon {
+        display: none;
+    }
+
+    /* Desktop speciifc styles */
+    @media screen and (min-width: 1000px) {       /* styles for when screen is more than 100 pixels wide */
+        .nav {
+            display:flex;
+            justify-content: center;
+            align-items: center; 
+        }
+    }
+
+    /* Mobile speciifc styles */
+    @media screen and (max-width: 1000px) {       /* Convert styles when the screen is less than 1000 pixels wide */ 
+        .nav a:not(:first-child) {
+            display: none;                        /* hide all links except 'home' */   
+        }     
+        .nav a.icon {                             /* display nav icon */
+            float: right;
+            display: block;
+        }
+        .nav.responsive {
+            position: relative;                  /* When icon is clicked java script is applied, nav becomes 'nav.responsive */
+        }   
+        .nav.responsive a.icon {                 /* Position nav icon */
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .nav.responsive a {                      /* Alter link Positioning */
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+/* -------- Footer --------- */
+    /* Positioning of all footer elements */
+    #footer-wrapper{
+        display: flex;
+        justify-content:center;
+        margin: 20px auto;
+        padding: 0px;
+        border-top: 2px solid #272020; 
+        gap: 80px;
+    }
+    
+    /* Consistent footer section alignment */
+    #footer-logo,
+    #footer-nav,
+    #footer-quick,
+    #footer-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* padding for footer headings */
+    #footer-nav h5,
+    #footer-quick h5,
+    #footer-contact h5 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    } 
+    
+    /* Style the links list */
+    #footer-nav ul,
+    #footer-quick ul,
+    #footer-contact ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;  
+        color: #8f8276;  
+    }
+    /* adjust list positioning */  
+    #footer-nav ul li,
+    #footer-quick ul li,
+    #footer-contact ul li {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    /* Style the links list */
+    #footer-nav ul li a,
+    #footer-quick ul li a {
+        text-decoration: none;
+        color: #8f8276;
+        font-size: 16px;
+    }
+    
+    /* links go pink on hover */
+    #footer-nav ul li a:hover,
+    #footer-quick ul li a:hover {
+        color: #C67971;
+    }
+
+    /* Footer contact icons */
+    #footer-contact ul li img {
+        margin-right: 5px;
+        width: 20px;
+    }
+    
+    /* Footer Logo */
+        /* Align logo and comp title */
+        #footer-logo {
+            align-items: center;
+            padding-top: 20px;
+        }
+        /* Logo image positioning */
+        #footer-logo img {
+            padding: 10px;
+            width: 200px; 
+        }
+
+        /* comp title positioning */
+        #footer-logo h6 {
+            padding-left: 5px;
+        }   
+
+    /* Footer mobile view */
+    @media screen and (max-width: 1000px) {      /* Convert styles when the screen is less than 1000 pixels wide */ 
+        #footer-wrapper {
+            flex-direction: column; 
+            align-items: center; 
+            width: 90%; 
+            gap: 20px; 
+            text-align: center;
+        }
+    }
+
+/* -------- All Content -------- */
+    /* position all content within these values */
+    #content-wrapper {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    /* all 'content' class will display in flex */
+    .content {
+        display: flex;
+    }
+   
+    /* all 'subcontent' class will have 20px padding */
+    .subcontent {
+        padding: 20px
+    }
+        
+    /* All mobile content style */
+    @media screen and (max-width: 1000px) {
+        #content-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        } 
+
+        .content { 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subcontent {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subcontent {
+            padding: 10px
+        }
+    }
+
+/* -------- Home Page Content -------- */
+    
+    /* -- Content box 1 -- */
+    
+        /* Interactive 'hello' text */
+        .page-home #content-1a h2 .letter {
+            letter-spacing: -8px; /* Adjusts the spacing between letters */
+        }
+        
+        /* Sets each letter to a different colour */
+        .page-home #content-1a h2 .letter:hover:nth-child(1) {
+            color: #de7468;
+            transition: color;
+        }
+
+        .page-home #content-1a h2 .letter:hover:nth-child(2) {
+            color: #e18a42;
+            transition: color;
+        }
+
+        .page-home #content-1a h2 .letter:hover:nth-child(3) {
+            color: #f4bc4c;
+            transition: color;
+        }
+
+        .page-home #content-1a h2 .letter:hover:nth-child(4) {
+            color: #5bac50;
+            transition: color;
+        }
+
+        .page-home #content-1a h2 .letter:hover:nth-child(5) {
+            color: #618eac;
+            transition: color;
+        }
+
+        .page-home #content-1a h2 .letter:hover:nth-child(6) {
+            color: #835ea4;
+            transition: color;
+        }
+
+        /* colour slowly returns to default */
+        .page-home #content-1a h2 .letter {
+            transition: color 4s ease; 
+        }
+        
+        /* Heading positioning */
+        .page-home #content-1a h2 {
+            padding-bottom: 20px;
+        }
+
+        /* style image 1 */
+        .page-home #content-1a img {
+            width: 400px;                
+            border: 5px solid #CF7C72; 
+            border-radius: 20px;            
+        }
+        
+        /* position content in line with image */
+        .page-home #content-1b {
+            padding-top: 60px;
+        }
+
+    /* -- Content box 2 -- */
+
+        /* display content in column and center aligned */
+        .page-home #content-2 {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Position images */
+        .page-home #content-2b {
+            display: flex;
+            justify-content: center; 
+            gap: 40px; 
+        }
+
+        /* size images */
+        .page-home #content-2b img{
+            width: 200px;   
+            border-radius: 20px;
+        }
+
+        /* Slighty grow images as hover effect*/
+        .page-home #content-2b img:hover{
+            transform: scale(1.1);                  
+        }
+
+        /* Image borders */
+        .page-home #content-2b a:nth-child(1) img {
+            border: 5px solid #618eac;                 
+        }
+        
+        .page-home #content-2b a:nth-child(2) img {
+            border: 5px solid #ce9f42;
+        }
+        
+        .page-home #content-2b a:nth-child(3) img {
+            border: 5px solid #679f5f; 
+        }
+
+    /* -- Home page Mobile view -- */
+
+        @media screen and (max-width: 1000px) {
+
+            /* Centre the title */
+            .page-home #content-1b h3  {
+                text-align: center;
+            }
+
+            /* Make images scale */
+            .page-home #content-2b img, 
+            .page-home #content-1a img {
+                width: 100%;  
+                height: auto;
+            }
+        }
+
+/* -------- About page -------- */
+    
+    /* -- Content box 1 -- */
+
+        /* style image */
+        .page-about #content-1b img {
+            width: 400px;
+            border: 5px solid #618eac;
+            border-radius: 20px;  
+        }
+
+    /* -- Content box 2 -- */
+
+        /* style image */
+        .page-about #content-2a img {
+            width: 400px; 
+            border: 5px solid #ce9f42; 
+            border-radius: 20px;
+        }
+
+    /* -- About page Mobile view -- */
+    
+        @media screen and (max-width: 1000px) {
+            
+            /* adjust content order */ 
+            .page-about #content-2 {
+                flex-direction:column-reverse
+            }
+
+            /* Centre the title */
+            .page-about h3 {
+                text-align: center;
+            }
+
+            /* Make images scale */
+            .page-about #content-1b img, 
+            .page-about #content-2a img {
+                width: 100%; 
+                height: auto; 
+            }
+        }
+
+/* -------- Qualifications page -------- */
+    
+    /* Hide checkbox */
+    .page-qualifications .resume-collapsible-checkbox, 
+    .page-qualifications .degree-collapsible-checkbox,
+    .page-qualifications .cert-collapsible-checkbox,
+    .page-qualifications .letter-collapsible-checkbox {
+        display: none;
+    }
+
+    /* Hide content by default */
+    .page-qualifications .content-1a,
+    .page-qualifications .content-2a,
+    .page-qualifications .content-3a,
+    .page-qualifications .content-4a {
+        display: none;
+        overflow: hidden;
+        padding: 0px 20px 20px 20px;
+        text-align: center;
+    }
+
+    /* style toggle text */
+    .toggle-text{
+        font-weight:lighter; 
+        font-size: 10pt;
+        opacity: 50%;
+    }
+
+    /* style label */
+    .page-qualifications .label {
+        color: #EEE7D9;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        width: 98%;
+        display: block;
+        text-align: left;
+        border-radius: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    /* label colours */ 
+    .page-qualifications .resume-collapsible-label {
+        background-color: #CF7C72;
+    }
+
+    .page-qualifications .degree-collapsible-label {
+        background-color: #618eac;
+    }
+
+    .page-qualifications .cert-collapsible-label {
+        background-color: #ce9f42;
+    }
+
+    .page-qualifications .letter-collapsible-label {
+        background-color: #679f5f;
+    }
+    
+    /* Show content when the checkbox is checked */
+    .page-qualifications .resume-collapsible-checkbox:checked + .resume-collapsible-label + .content-1a,
+    .page-qualifications .degree-collapsible-checkbox:checked + .degree-collapsible-label + .content-2a,
+    .page-qualifications .cert-collapsible-checkbox:checked + .cert-collapsible-label + .content-3a,
+    .page-qualifications .letter-collapsible-checkbox:checked + .letter-collapsible-label + .content-4a {
+        display: block;
+    }
+    
+    /* Outline label when toggled */
+    .page-qualifications .resume-collapsible-checkbox:checked + .label,
+    .page-qualifications .degree-collapsible-checkbox:checked + .label,
+    .page-qualifications .cert-collapsible-checkbox:checked + .label,
+    .page-qualifications .letter-collapsible-checkbox:checked + .label {
+        border: 2px solid #272020; 
+    }
+    
+    /* center and scale content to Ensure the image does not exceed the container width */
+    .page-qualifications .content-1a img,
+    .page-qualifications .content-2a img,
+    .page-qualifications .content-3a img, 
+    .page-qualifications .content-4a img{
+        margin: 0 auto; 
+        height: auto;
+        width: 960px;
+        max-width: 100%; 
+    }
+
+    /* style download link */
+    .page-qualifications .download {
+        display: inline-block;
+        color: #EEE7D9; 
+        text-decoration: none; 
+        padding: 10px 20px;
+        border-radius: 16px; 
+        font-weight: bold; 
+        margin: 10px; 
+    }
+
+    /* download link colours */
+    .page-qualifications .content-1a a {
+        background-color: #CF7C72; 
+    }
+
+    .page-qualifications .content-2a a {
+        background-color: #618eac; 
+    }
+
+    .page-qualifications .content-3a a {
+        background-color: #ce9f42; 
+    }
+
+    .page-qualifications .content-4a a {
+        background-color: #618eac;
+    }
+
+    /*style download link to have outline when hovered */
+    .page-qualifications .download:hover {
+        border: 2px solid #272020;
+    }
+     
+
+/* -------- Teaching philosophy page -------- */
+   
+    /* -- Content box 1 -- */
+
+        /* align content in column */
+        .page-teaching #content-1 {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+    /* -- Content box 2 -- */
+        
+        /* style image */
+        .page-teaching #content-2a img {
+            width: 400px; 
+            border: 5px solid #679f5f; 
+            border-radius: 20px;
+        }
+
+    /* -- Content box 3 -- */
+        /* remove margin and padding from bottom of this box */
+        .page-teaching #content-3a p {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        
+        /* style image */
+        .page-teaching #content-3b img {
+            width: 400px; 
+            border: 5px solid #CF7C72; 
+            border-radius: 20px; 
+        }
+
+    /* -- Content box 4 -- */
+        /* remove margin and padding from top of this box */
+        .page-teaching #content-4 p {
+            margin-top: 0px;
+            padding: 0 20px;
+        }
+        
+/* -- Philosophy page Mobile view -- */
+    @media screen and (max-width: 1000px) {
+        
+        /* Centre the titles */
+        .page-teaching h3 {
+            text-align: center;
+        }
+
+        /* Make images scale */
+        .page-teaching #content-2a img, 
+        .page-teaching #content-3b img {
+            width: 100%; 
+            height: auto;
+            margin: 5px;
+        }
+    }

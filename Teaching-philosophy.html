@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"> <!-- Ensures website is viewable on mobile -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Style sheet for mobile Nav Icon -->
+        <link rel="stylesheet" href="main.css"> <!-- main style sheet -->
+        <title> Teaching Philosophy - Teaching Portfolio </title>
+    </head>
+
+    <body class="page-teaching">
+
+        <!-- { Header } -->
+        <header> 
+
+            <!-- title -->
+            <div id="title">
+                <img src="Images/sparkle.png" alt="Decorative sparkles">
+                <h1> Teaching Portfolio </h1>
+                <img src="Images/sparkle.png" alt="Decorative sparkle">
+            </div>
+                    
+            <!-- Nav -->
+            <nav class="nav" id="mynav">
+                <a href="index.html" class="home-nav button">Home</a>
+                <a href="About-me.html" class="about-nav button">About me</a>
+                <a href="Qualifications.html" class="qualifications-nav button">Qualifications</a>
+                <a href="Teaching-philosophy.html" class="current teaching-nav button">Teaching Philosophy</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>  <!-- Mobile only Navigation Icon -->
+
+                <!-- JavaScript for mobile nav bar -->
+                <script>
+                    function myFunction() {
+
+                    // Get the navigation element by its id
+                      var x = document.getElementById("mynav");
+
+                    // Reveal mobile nav drop down when icon is clicked
+                      if (x.className === "nav") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "nav";
+                      }
+                    }
+                </script>
+            </nav>
+
+        </header>  
+        
+        <!-- { Content } -->
+        <div id="content-wrapper">
+
+            <!-- Content 1 -->
+            <div class= "content" id="content-1">
+                <h3> Teaching Philosophy </h3>
+                <p> Defining my philosophy or goal as a teacher, is difficult to put simply. First I will say what it is not, my goal is not to get students to fill in the worksheet, my goal is not for them to replicate or copy a project, and my goal is definitly not for them to memorise. What my goal is as a teacher is get students to feel inspired and connected to a topic, to explore a medium or an idea they havnt thought about before and see it in a new light or create somthing new from it, and to truly understand somthing to its fullest extent. I worry that some people think teaching is simply telling students the way to do something. Thinking back to my highschool days I personally couldnt be content with being told what to do without be told why I was doing it. Why must I add 5cm to my pattern? Why must I indent my code? Why must I hold the knife this way? My true goal as a teacher is to never leave the 'why' un-answered. </p>
+            </div>
+
+            <!-- Content 2 -->
+            <div class= "content" id="content-2">
+
+                <div class="subcontent" id="content-2a">
+                    <img src="images/software.png" alt="software class picture">
+                </div>
+
+                <div id="content-2b">
+                    <h3> Understanding students </h3>
+                    <p> As a teacher, I think its very important to establish positive teacher-student relationships, and this can often have a big impact on your ability to effectivly teach students. I use Maslow's Hierachy of needs and Goal Theory to inform my apporach. When students arent doing work or arent paying attention, I believe its always important to give students every benefit of the doubt before assuming theyre being purposfully disrespectful, in this scenario I use the aforementioned theories to try and discover the underlying cause of the behaviour and approach it with understanding and empthay, as students often have an underlying problem that causes the behaviour, such as friendship problems, unstable home life, or poor mental health. As a teacher I want to try and be a positive force in their lives, not another pressure.</p>
+                </div>
+
+            </div>
+
+            <!-- Content 3 -->
+            <div class= "content" id="content-3">
+                
+                <div class="subcontent" id="content-3a">
+                    <h3> Teaching Strategies</h3>
+                    <p> I tend to approach my teaching using 2 main stratgeies, Project based learning and Constructavism, both of which aim to make the students more activly involved in the learning process. <br> <br> Following constructavism, I aim to activate students schemas when exploring topics, this means they can build upon their previous knowledge and bring aspects of their life into the topic, for example in food tech asking them to tell me what foods they saw trending this week on social media. Through constructavism I am to make topics feel grounded and approachable, it shows students how this concept is connected to their lived experiences, which not only helps them to understand and retain the info, but to engage with it on a deeper level too.</p>
+                </div>
+
+                <div class="subcontent" id="content-3b">
+                    <img src="images/textiles.png" alt="textiles class picture">
+                </div>
+
+            </div>
+
+            <!-- Content 4 -->
+            <div class= "content" id="content-4">
+                <p> Project based learning is the other half of my approach, If I can avoid a scenario in which I am simply telling a student how to do somthing, and instead show them I will always choose that option. A good example of this is teaching a food tech class about emulsification, and instead of just defining it, actually demonstrate mayonnaise being made, or better yet, get each student to try making some. By engaging the students other senses such as touch and smell, their brains will create a stronger recollection of the concept. By using these 2 stategies I aim to make learning a more dynamic experince for students.</p>
+            </div>
+
+        </div>
+        
+        <!-- { Footer } -->
+        <Footer id="footer-wrapper"> 
+
+            <!-- logo -->
+            <section id="footer-logo">
+
+                <img src="images/Logo.png" alt="logo">
+                <h6>Comp208 Task 1</h6>
+
+            </section>
+
+            <!-- Footer nav  -->
+            <section id="footer-nav">
+
+                <h5> Navigation </h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About-me.html">About me</a></li>
+                    <li><a href="Qualifications.html">Qualifications</a></li>
+                    <li><a href="Teaching-philosophy.html">Teaching philosophy</a></li>  
+                </ul>   
+
+            </section>
+
+            <!-- Quick nav  -->
+            <section id="footer-quick">
+
+                <h5> Quick links </h5>
+                <ul>
+                    <li><a href="Qualifications.html">Resume</a></li>
+                    <li><a href="Qualifications.html">Degree Transcript</a></li>  
+                    <li><a href="Qualifications.html">Cert II Kitchen operations </a></li>
+                    <li><a href="Qualifications.html">Faculty Commendation Letter </a></li>
+                </ul>  
+
+            </section>
+
+            <!-- Contact -->
+            <section id="footer-contact">
+        
+                <h5> Contact </h5>
+                <ul>
+                    <li id="contact-phone"> <img src="Images/phone.png" alt="phone icon"> 0400000000</li>
+                    <li id="contact-Linkedin"> <img src="Images/linkedin.png" alt="linkedin icon"> Laura-sargeant</li>
+                    <li id="contact-gmail"> <img src="Images/gmail.png" alt="Gmail icon"> emailaddress@gmail.com</li>
+                </ul>  
+
+            </section>
+
+        </Footer>
+     
+    </body>
+
+</html>

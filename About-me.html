@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"> <!-- Ensures website is viewable on mobile -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Style sheet for mobile Nav Icon -->
+        <link rel="stylesheet" href="main.css"> <!-- main style sheet -->
+        <title> About me - Teaching Portfolio </title>
+    </head>
+
+    <body class="page-about">
+
+        <!-- { Header } -->
+        <header> 
+
+            <!-- title -->
+            <div id="title">
+                <img src="Images/sparkle.png" alt="Decorative sparkles">
+                <h1> Teaching Portfolio </h1>
+                <img src="Images/sparkle.png" alt="Decorative sparkle">
+            </div>
+                    
+            <!-- Nav -->
+            <nav class="nav" id="mynav">
+                <a href="index.html" class="home-nav button">Home</a>
+                <a href="About-me.html" class=" current about-nav button">About me</a>
+                <a href="Qualifications.html" class="qualifications-nav button">Qualifications</a>
+                <a href="Teaching-philosophy.html" class="teaching-nav button">Teaching Philosophy</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>  <!-- Mobile only Navigation Icon -->
+
+                <!-- JavaScript for mobile nav bar -->
+                <script>
+                    function myFunction() {
+
+                    // Get the navigation element by its id
+                      var x = document.getElementById("mynav");
+
+                    // Reveal mobile nav drop down when icon is clicked
+                      if (x.className === "nav") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "nav";
+                      }
+                    }
+                </script>
+            </nav>
+
+        </header> 
+        
+        <!-- { Content } -->
+        <div id="content-wrapper">
+
+            <!-- Content 1 -->
+            <div class= "content" id="content-1">
+                
+                <div class="subcontent" id="content-1a">
+                    <h3> Who am I?</h3>
+                    <p> My name is Laura Sargeant, I am a motivated TAS educator with skills across the disciplines. I love the act of the designing, and that love tends to transcend the medium, this allows me enjoy teaching various subject areas. I personally have a strong interest in Computer based design which includes CAD and coding, as a result I am very competent at using programs such as Fusion360 and Adobe illustrator, and machines such as laser cutters and 3D printers. <br> <br> In my highschool years I also took part in Hospitality, this has left me with a Cert II in kitchen operations, which I plan to upskills into a cert IV so I can teach this other passion of mine in schools.
+                    </p>
+                </div>
+
+                <div class="subcontent" id="content-1b">
+                    <img src="images/Profile.png" alt="Profile picture">
+                </div>
+
+            </div>
+
+            <!-- Content 2 -->
+            <div class= "content" id="content-2">
+
+                <div class="subcontent" id="content-2a">
+                    <img src="images/hospo.png" alt="Hospitality class picture">
+                </div>
+
+                <div class="subcontent" id="content-2b">
+                    <h3> What led me to teaching </h3>
+                    <p> I can source the moment I discovered my love for teaching back to highschool. I volunteered for the catechism program which meant we would go to local primary schools and teach scripture. During this time I found it very enjoyable and fulfilling planning lessons to engage the students and make the time enjoyable for them. <br> <br> Once this spark was ignited I began to notice how I would always try and help my classmates and enjoyed doing so thoroughly, this only cemeted in my mind that I could combine my love of teaching with my love of design and be a TAS teacher. </p>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!-- { Footer } -->
+        <Footer id="footer-wrapper"> 
+
+            <!-- logo -->
+            <section id="footer-logo">
+
+                <img src="images/Logo.png" alt="logo">
+                <h6>Comp208 Task 1</h6>
+
+            </section>
+
+            <!-- Footer nav  -->
+            <section id="footer-nav">
+
+                <h5> Navigation </h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About-me.html">About me</a></li>
+                    <li><a href="Qualifications.html">Qualifications</a></li>
+                    <li><a href="Teaching-philosophy.html">Teaching philosophy</a></li>  
+                </ul>   
+
+            </section>
+
+            <!-- Quick nav  -->
+            <section id="footer-quick">
+
+                <h5> Quick links </h5>
+                <ul>
+                    <li><a href="Qualifications.html">Resume</a></li>
+                    <li><a href="Qualifications.html">Degree Transcript</a></li>  
+                    <li><a href="Qualifications.html">Cert II Kitchen operations </a></li>
+                    <li><a href="Qualifications.html">Faculty Commendation Letter </a></li>
+                </ul>  
+
+            </section>
+
+            <!-- Contact -->
+            <section id="footer-contact">
+        
+                <h5> Contact </h5>
+                <ul>
+                    <li id="contact-phone"> <img src="Images/phone.png" alt="phone icon"> 0400000000</li>
+                    <li id="contact-Linkedin"> <img src="Images/linkedin.png" alt="linkedin icon"> Laura-sargeant</li>
+                    <li id="contact-gmail"> <img src="Images/gmail.png" alt="Gmail icon"> emailaddress@gmail.com</li>
+                </ul>  
+
+            </section>
+
+        </Footer>
+     
+    </body>
+
+</html>

@@ -207,7 +207,9 @@
 
     /* Style the links list */
     #footer-nav ul li a,
-    #footer-quick ul li a {
+    #footer-quick ul li a,
+    #footer-contact ul li a {
+        
         text-decoration: none;
         color: #8f8276;
         font-size: 16px;
@@ -215,7 +217,8 @@
     
     /* links go pink on hover */
     #footer-nav ul li a:hover,
-    #footer-quick ul li a:hover {
+    #footer-quick ul li a:hover,
+    #footer-contact ul li a:hover  {
         color: #C67971;
     }
 
